@@ -32,37 +32,21 @@
     [scrollView setZoomScale:scrollView.minimumZoomScale];
     
     [self.view addSubview:scrollView];
+    
+    image.frame = [self centeredFrameForScrollView:scrollView andUIView:image];
     [scrollView release];
 
 }
 
 - (void)doubleClickImage:(UITapGestureRecognizer *)tapGestureRecognizer
 {
-    //    [self.galleryViewCellDelegate galleryViewCell:self doubleClickImageWithTapGestureRecognizer:tapGestureRecognizer];
     CGPoint location = [tapGestureRecognizer locationInView:image];
     if (scrollView.zoomScale == scrollView.minimumZoomScale) {
         CGSize scrollViewSize = scrollView.bounds.size;
-        CGSize imageSize = image.image.size;
         CGFloat width = scrollViewSize.width / scrollView.maximumZoomScale;
         CGFloat height = scrollViewSize.height / scrollView.maximumZoomScale;
         CGFloat x = location.x - (width / 2.0f);
-        if (x < 0) {
-            x = 0;
-        }
-        
-        if ((x + width) > imageSize.width) {
-            width = imageSize.width - x;
-        }
-        
         CGFloat y = location.y - (height / 2.0f);
-        if (y < 0) {
-            y = 0;
-        }
-        
-        if ((y + height) > imageSize.height) {
-            height = imageSize.height - y;
-        }
-        
         CGRect rectToZoomTo = CGRectMake(x, y, width, height);
         [scrollView zoomToRect:rectToZoomTo animated:YES];
     }else if ((scrollView.zoomScale > scrollView.minimumZoomScale) && (scrollView.zoomScale <= scrollView.maximumZoomScale)){
