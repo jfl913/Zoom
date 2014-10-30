@@ -1,0 +1,85 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* Zoom */ = {
+		activeExec = 0;
+		executables = (
+			31F4173E1259071F00DB3FB2 /* Zoom */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* ZoomViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 654}}";
+			sepNavSelRange = "{263, 0}";
+			sepNavVisRange = "{0, 273}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* ZoomViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 980}}";
+			sepNavSelRange = "{1427, 0}";
+			sepNavVisRange = "{667, 946}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 31F4173E1259071F00DB3FB2 /* Zoom */;
+		activeSDKPreference = iphonesimulator4.0;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Zoom */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Zoom */,
+		);
+		codeSenseManager = 31F417491259074300DB3FB2 /* Code sense */;
+		executables = (
+			31F4173E1259071F00DB3FB2 /* Zoom */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 307824415;
+			PBXWorkspaceStateSaveDate = 307824415;
+		};
+		sourceControlManager = 31F417481259074300DB3FB2 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	31F4173E1259071F00DB3FB2 /* Zoom */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Zoom;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	31F417481259074300DB3FB2 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	31F417491259074300DB3FB2 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
